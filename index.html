@@ -1,0 +1,3719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Faiza Noor — Junior Full-Stack Web Developer, MS Office Specialist and Creative Professional from Punjab, Pakistan."
+    >
+
+    <meta
+        name="keywords"
+        content="Faiza Noor, Full Stack Developer, Frontend Developer, React Developer, JavaScript Developer, TypeScript Developer, Node.js Developer, MS Office Specialist, Pakistan"
+    >
+
+    <meta
+        name="author"
+        content="Faiza Noor"
+    >
+
+    <meta
+        name="theme-color"
+        content="#050505"
+    >
+
+    <title>
+        Faiza Noor | Junior Full-Stack Web Developer
+    </title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<!-- CV POPUP -->
+<div id="cvModal" class="cv-modal">
+
+    <div class="cv-overlay" onclick="closeCV()"></div>
+
+    <div class="cv-box">
+
+        <button class="cv-close" onclick="closeCV()">×</button>
+
+        <img src="faiza noor Aug 20, 2026, 10_06_16 PM.png" alt="Faiza Noor CV" class="cv-image">
+
+    </div>
+
+</div>
+
+<body>
+<!-- =====================================
+     CINEMATIC INTRO
+===================================== -->
+
+<div id="intro">
+
+    <!-- Background -->
+    <div class="intro-bg"></div>
+
+    <!-- Purple / Blue atmosphere -->
+    <div class="purple-glow"></div>
+    <div class="blue-glow"></div>
+
+    <!-- Lightning -->
+    <div class="bolt bolt-1"></div>
+    <div class="bolt bolt-2"></div>
+    <div class="bolt bolt-3"></div>
+    <div class="bolt bolt-4"></div>
+
+    <!-- Energy particles -->
+    <div class="particles"></div>
+
+    <!-- Ground -->
+    <div class="ground"></div>
+
+    <!-- Ground cracks -->
+    <div class="crack crack-1"></div>
+    <div class="crack crack-2"></div>
+    <div class="crack crack-3"></div>
+    <div class="crack crack-4"></div>
+    <div class="crack crack-5"></div>
+
+    <!-- Girl -->
+    <!-- =====================================================
+     CINEMATIC FAIZA NOOR INTRO
+===================================================== -->
+
+<div id="cinematicIntro">
+
+    <!-- Dark cinematic background -->
+    <div class="intro-dark"></div>
+
+    <!-- Coding screen -->
+    <div class="coding-screen">
+
+        <div class="code-top">
+            <span>FAIZA_NOOR.DEV</span>
+            <span>● SYSTEM ONLINE</span>
+        </div>
+
+        <div class="code-lines">
+            <p><span>01</span> if (
+        window.matchMedia(
+            "(pointer: fine)"
+        ).matches
+    ) {
+
+        projectCards.forEach((card) => {
+
+            card.addEventListener(
+                "mousemove",
+                (event) => {
+
+                    const rect =
+                        card.getBoundingClientRect();
+
+                    const x =
+                        event.clientX - rect.left;
+
+                    const y =
+                        event.clientY - rect.top;
+
+                    const centerX =
+                        rect.width / 2;
+
+                    const centerY =
+                        rect.height / 2;
+
+                    const rotateX =
+                        ((y - centerY) / centerY) * -3;
+
+                    const rotateY =
+                        ((x - centerX) / centerX) * 3;
+
+
+                    card.style.transform =
+                        `perspective(1000px)
+                         rotateX(${rotateX}deg)
+                         rotateY(${rotateY}deg)
+                         translateY(-5px)`;
+
+                }
+            );<br>
+
+
+            card.addEventListener(
+                "mouseleave",
+                () => {
+
+                    card.style.transform = "";
+
+                }
+            );
+
+        });
+
+    }
+
+
+    /* =====================================================
+       SKILL CARD HOVER
+    ====================================================== */
+
+    skillCards.forEach((card) => {
+
+        card.addEventListener(
+            "mouseenter",
+            () => {
+
+                card.classList.add(
+                    "skill-active"
+                );
+
+            }
+        );
+
+
+        card.addEventListener(
+            "mouseleave",
+            () => {
+
+                card.classList.remove(
+                    "skill-active"
+                );
+
+            }
+        );
+
+    });
+<br>
+
+    /* =====================================================
+       MOUSE CUSTOM CURSOR
+    ====================================================== */
+
+    const hasFinePointer =
+        window.matchMedia(
+            "(pointer: fine)"
+        ).matches;
+
+
+    if (
+        hasFinePointer &&
+        customCursorDot &&
+        customCursorOutline
+    ) {
+
+        body.classList.add(
+            "custom-cursor-enabled"
+        );
+
+
+        let mouseX = 0;
+        let mouseY = 0;
+
+        let outlineX = 0;
+        let outlineY = 0;
+
+
+        document.addEventListener(
+            "mousemove",
+            (event) => {
+
+                mouseX = event.clientX;
+                mouseY = event.clientY;
+
+
+                customCursorDot.style.transform =
+                    `translate3d(
+                        ${mouseX}px,
+                        ${mouseY}px,
+                        0
+                    )`;
+
+            }
+        );<br>
+        <p><span>02</span> const rotateY =
+                        ((x - centerX) / centerX) * 3;
+
+
+                    card.style.transform =
+                        `perspective(1000px)
+                         rotateX(${rotateX}deg)
+                         rotateY(${rotateY}deg)
+                         translateY(-5px)`;
+
+                }
+          "CSS", "JavaScript"];</p>
+            <p><span>03</span>if (contactForm) {
+
+        contactForm.addEventListener(
+            "submit",
+            (event) => {
+
+                event.preventDefault();
+
+
+                const name =
+                    document.getElementById("name")?.value.trim();
+
+                const email =
+                    document.getElementById("email")?.value.trim();
+
+                const subject =
+                    document.getElementById("subject")?.value.trim();
+
+                const message =
+                    document.getElementById("message")?.value.trim();
+
+
+                if (
+                    !name ||
+                    !email ||
+                    !subject ||
+                    !message
+                ) {
+
+                    showFormMessage(
+                        "Please complete all fields."
+                    );
+
+                    return;
+
+                }
+
+
+                const submitButton =
+                    contactForm.querySelector(
+                        ".submit-button"
+                    );
+
+
+                if (submitButton) {
+
+                    submitButton.classList.add(
+                        "sending"
+                    );
+
+                    submitButton.disabled = true;
+
+                }
+
+
+                /*
+                    Frontend-only demo.
+
+                    Later you can connect this form
+                    with Formspree, EmailJS, FormSubmit,
+                    a Node.js backend, etc.
+                */
+
+                setTimeout(() => {
+
+                    if (submitButton) {
+
+                        submitButton.classList.remove(
+                            "sending"
+                        );
+
+                        submitButton.disabled = false;
+
+                    }
+
+
+                    showFormMessage(
+                        "Thank you! Your message is ready to be connected to the email service."
+                    );
+
+
+                    contactForm.reset();
+
+                }, 1000);
+
+            }
+        );
+
+    }if (contactForm) {
+
+        contactForm.addEventListener(
+            "submit",
+            (event) => {
+
+                event.preventDefault();
+
+
+                const name =
+                    document.getElementById("name")?.value.trim();
+
+                const email =
+                    document.getElementById("email")?.value.trim();
+
+                const subject =
+                    document.getElementById("subject")?.value.trim();
+
+                const message =
+                    document.getElementById("message")?.value.trim();
+
+
+                if (
+                    !name ||
+                    !email ||
+                    !subject ||
+                    !message
+                ) {
+
+                    showFormMessage(
+                        "Please complete all fields."
+                    );
+
+                    return;
+
+                }
+
+
+                const submitButton =
+                    contactForm.querySelector(
+                        ".submit-button"
+                    );
+
+
+                if (submitButton) {
+
+                    submitButton.classList.add(
+                        "sending"
+                    );
+
+                    submitButton.disabled = true;
+
+                }
+
+
+                /*
+                    Frontend-only demo.
+
+                    Later you can connect this form
+                    with Formspree, EmailJS, FormSubmit,
+                    a Node.js backend, etc.
+                */
+
+                setTimeout(() => {
+
+                    if (submitButton) {
+
+                        submitButton.classList.remove(
+                            "sending"
+                        );
+
+                        submitButton.disabled = false;
+
+                    }
+
+
+                    showFormMessage(
+                        "Thank you! Your message is ready to be connected to the email service."
+                    );
+
+
+                    contactForm.reset();
+
+                }, 1000);
+
+            }
+        );
+
+    }
+if (contactForm) {
+
+        contactForm.addEventListener(
+            "submit",
+            (event) => {
+
+                event.preventDefault();
+
+
+                const name =
+                    document.getElementById("name")?.value.trim();
+
+                const email =
+                    document.getElementById("email")?.value.trim();
+
+                const subject =
+                    document.getElementById("subject")?.value.trim();
+
+                const message =
+                    document.getElementById("message")?.value.trim();
+
+
+                if (
+                    !name ||
+                    !email ||
+                    !subject ||
+                    !message
+                ) {
+
+                    showFormMessage(
+                        "Please complete all fields."
+                    );
+
+                    return;
+
+                }
+
+
+                const submitButton =
+                    contactForm.querySelector(
+                        ".submit-button"
+                    );
+
+
+                if (submitButton) {
+
+                    submitButton.classList.add(
+                        "sending"
+                    );
+
+                    submitButton.disabled = true;
+
+                }
+
+
+                /*
+                    Frontend-only demo.
+
+                    Later you can connect this form
+                    with Formspree, EmailJS, FormSubmit,
+                    a Node.js backend, etc.
+                */
+
+                setTimeout(() => {
+
+                    if (submitButton) {
+
+                        submitButton.classList.remove(
+                            "sending"
+                        );
+
+                        submitButton.disabled = false;
+
+                    }
+
+
+                    showFormMessage(
+                        "Thank you! Your message is ready to be connected to the email service."
+                    );
+
+
+                    contactForm.reset();
+
+                }, 1000);
+
+            }
+        );
+
+    }
+if (contactForm) {
+
+        contactForm.addEventListener(
+            "submit",
+            (event) => {
+
+                event.preventDefault();
+
+
+                const name =
+                    document.getElementById("name")?.value.trim();
+
+                const email =
+                    document.getElementById("email")?.value.trim();
+
+                const subject =
+                    document.getElementById("subject")?.value.trim();
+
+                const message =
+                    document.getElementById("message")?.value.trim();
+
+
+                if (
+                    !name ||
+                    !email ||
+                    !subject ||
+                    !message
+                ) {
+
+                    showFormMessage(
+                        "Please complete all fields."
+                    );
+
+                    return;
+
+                }
+
+
+                const submitButton =
+                    contactForm.querySelector(
+                        ".submit-button"
+                    );
+
+
+                if (submitButton) {
+
+                    submitButton.classList.add(
+                        "sending"
+                    );
+
+                    submitButton.disabled = true;
+
+                }
+
+
+                /*
+                    Frontend-only demo.
+
+                    Later you can connect this form
+                    with Formspree, EmailJS, FormSubmit,
+                    a Node.js backend, etc.
+                */
+
+                setTimeout(() => {
+
+                    if (submitButton) {
+
+                        submitButton.classList.remove(
+                            "sending"
+                        );
+
+                        submitButton.disabled = false;
+
+                    }
+
+
+                    showFormMessage(
+                        "Thank you! Your message is ready to be connected to the email service."
+                    );
+
+
+                    contactForm.reset();
+
+                }, 1000);
+
+            }
+        );
+
+    }
+
+ const framework = "React";</p>
+            <p><span>04</span> function createFuture() {</p>
+            <p><span>05</span> &nbsp;&nbsp; return developer.build();</p>
+            <p><span>06</span> }</p><br>
+            <p><span>07</span> developer.createPortfolio();</p>
+            <p><span>08</span> system.initialize();</p>
+            <p><span>09</span> status = "READY";</p>
+            <p><span>10</span> &lt;/FAIZA_NOOR&gt;</p>
+             <p><span>01</span> const developer = "Faiza Noor";</p>
+            <p><span>02</span> const skills = ["HTML", "CSS", "JavaScript"];</p>
+            <p><span>03</span> const framework = "React";</p><br>
+            <p><span>04</span> function createFuture() {</p>
+            <p><span>05</span> &nbsp;&nbsp; return developer.build();</p>
+            <p><span>06</span> }</p>
+            <p><span>07</span> developer.createPortfolio();</p>
+            <p><span>08</span> system.initialize();</p>
+
+<br>
+        function animateCursor() {
+
+            outlineX +=
+                (mouseX - outlineX) * 0.15;
+
+            outlineY +=
+                (mouseY - outlineY) * 0.15;
+
+
+            customCursorOutline.style.transform =
+                `translate3d(
+                    ${outlineX}px,
+                    ${outlineY}px,
+                    0
+                )`;
+
+
+            requestAnimationFrame(
+                animateCursor
+            );
+
+        }
+
+
+        animateCursor();
+
+
+        const interactiveElements =
+            document.querySelectorAll(
+                "a, button, input, textarea, .skill-card, .project-card"
+            );
+
+
+        interactiveElements.forEach(
+            (element) => {
+
+                element.addEventListener(
+                    "mouseenter",
+                    () => {
+
+                        body.classList.add(
+                            "cursor-hover"
+                        );
+
+                    }
+                );
+
+
+                element.addEventListener(
+                    "mouseleave",
+                    () => {
+
+                        body.classList.remove(
+                            "cursor-hover"
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+    }<br>
+
+
+  
+                  
+
+    
+
+            messageBox =
+                document.createElement("div");const developer = "Faiza Noor";</p>
+            <p><span>02</span> const skills = ["HTML", "CSS", "JavaScript"];</p>
+            <p><span>03</span> const framework = "React";</p>
+            <p><span>04</span> function createFuture() {</p>
+            <p><span>05</span> &nbsp;&nbsp; return developer.build();</p>
+            <p><span>06</span> }</p>
+            <p><span>07</span> developer.createPortfolio();</p>
+            <p><span>08</span> system.initialize();</p>
+            <p><span>09</span> status = "READY";</p>
+            <p><span>10</span> &lt;/FAIZA_NOOR&gt;</p>
+             <p><span>01</span> const developer = "Faiza Noor";</p>
+            <p><span>02</span> const skills = ["HTML", "CSS", "JavaScript"];</p>
+            <p><span>03</span> const framework = "React";</p>
+            <p><span>04</span> function createFuture() {</p>
+            <p><span>05</span> &nbsp;&nbsp; return developer.build();</p>
+            <p><span>06</span> }</p>
+            <p><span>07</span> developer.createPortfolio();</p>
+            <p><span>08</span> system.initialize();</p>
+            <p><span>09</span> status = "READY";</p>
+            <p><span>07</span> developer.createPortfolio();</p>
+            <p><span>08</span> system.initialize();</p>
+            <p><span>09</span> status = "READY";</p>
+            <p><span>10</span> &lt;/FAIZA_NOOR&gt;</p> <p><span>01</span> const developer = "Faiza Noor";</p>
+            <p><span>02</span> const skills = ["HTML", "CSS", "JavaScript"];</p>
+            <p><span>03</span> const framework = "React";</p>
+            <p><span>04</span> function createFuture() {</p>
+            <p><span>05</span> &nbsp;&nbsp; return developer.build();</p>
+            <p><span>06</span> }</p>
+            <p><span>07</span> developer.createPortfolio();</p>
+            <p><span>08</span> system.initialize();</p>
+            <p><span>09</span> status = "READY";</p>
+            <p><span>10</span> &lt;/FAIZA_NOOR&gt;</p>
+        </div>
+
+    </div>
+
+
+    <!-- Moving energy ball -->
+    <div class="energy-ball">
+
+        <div class="ball-core"></div>
+
+        <div class="ball-ring ball-ring-1"></div>
+        <div class="ball-ring ball-ring-2"></div>
+        <div class="ball-ring ball-ring-3"></div>
+
+        <div class="ball-trail"></div>
+
+    </div>
+
+
+    <!-- Impact explosion -->
+    <div class="impact">
+
+        <div class="impact-ring"></div>
+
+        <div class="impact-ring impact-ring-2"></div>
+
+        <div class="impact-flash"></div>
+
+    </div>
+
+
+    <!-- Broken glass -->
+    <div class="glass-crack">
+
+        <span class="crack crack-1"></span>
+        <span class="crack crack-2"></span>
+        <span class="crack crack-3"></span>
+        <span class="crack crack-4"></span>
+        <span class="crack crack-5"></span>
+        <span class="crack crack-6"></span>
+        <span class="crack crack-7"></span>
+        <span class="crack crack-8"></span>
+
+    </div>
+
+
+    <!-- Lightning -->
+    <div class="electricity">
+
+        <span class="bolt bolt-1"></span>
+        <span class="bolt bolt-2"></span>
+        <span class="bolt bolt-3"></span>
+        <span class="bolt bolt-4"></span>
+        <span class="bolt bolt-5"></span>
+
+    </div>
+
+
+    <!-- Floating particles -->
+    <div class="particles">
+
+        <i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i>
+
+    </div>
+
+
+    <!-- FINAL WELCOME -->
+    <div class="intro-title">
+
+        <div class="intro-mini">
+            <b>THE JOURNEY BEGINS </b>
+        </div>
+        <br>
+
+        <h1 class="intro-main">
+            WELCOME
+        </h1>
+        <br>
+        <br>
+
+        <h2>
+            TO MY
+        </h2>
+        <br>
+        <br>
+
+        <h1 class="faiza">
+            PORTFOLIO ..😊
+        </h1>
+        <br>
+
+        <div class="title-line"></div>
+
+        <p class="para">
+           <b> WEB DEVELOPER • CREATIVE MIND • FUTURE BUILDER</b>
+        </p>
+
+    </div>
+
+</div>
+
+    
+
+</div>
+
+
+<!-- =====================================
+     YOUR EXISTING PORTFOLIO
+===================================== -->
+
+<div id="portfolio">
+
+    <!--
+        YAHAN TUMHARI EXISTING WEBSITE KA
+        SARA CONTENT RAHEGA.
+
+        Apna current portfolio yahan
+        paste/keep karna.
+    -->
+
+</div>
+
+    <!-- =========================================================
+         PAGE LOADER
+    ========================================================== -->
+
+    <div
+        class="page-loader"
+        id="pageLoader"
+        aria-hidden="true"
+    >
+
+        <div class="loader-content">
+
+            <span class="loader-text">
+                FAIZA NOOR 😊
+            </span>
+
+            <span class="loader-line"></span>
+
+            <span class="loader-status">
+                INITIALIZING PORTFOLIO...
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         BACKGROUND EFFECTS
+    ========================================================== -->
+
+    <div
+        class="background-effects"
+        aria-hidden="true"
+    >
+
+        <div class="grid-background"></div>
+
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="glow glow-three"></div>
+
+        <div class="floating-particle particle-one"></div>
+        <div class="floating-particle particle-two"></div>
+        <div class="floating-particle particle-three"></div>
+        <div class="floating-particle particle-four"></div>
+        <div class="floating-particle particle-five"></div>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <header class="site-header">
+
+        <nav
+            class="navbar"
+            aria-label="Main navigation"
+        >
+
+            <!-- LOGO -->
+
+            <a
+                href="#home"
+                class="logo"
+                aria-label="Faiza Noor Home"
+            >
+
+                <span class="logo-symbol">
+                    &lt;/&gt;
+                </span>
+
+                <span class="logo-name">
+                    FAIZA<span>NOOR</span>
+                </span>
+
+            </a>
+
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-controls="navMenu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <!-- NAVIGATION LINKS -->
+
+            <div
+                class="nav-menu"
+                id="navMenu"
+            >
+
+                <a
+                    href="#home"
+                    class="nav-link active"
+                >
+                    <span>01</span>
+                    Home
+                </a>
+
+                <a
+                    href="#about"
+                    class="nav-link"
+                >
+                    <span>02</span>
+                    About
+                </a>
+
+                <a
+                    href="#skills"
+                    class="nav-link"
+                >
+                    <span>03</span>
+                    Skills
+                </a>
+
+                <a
+                    href="#projects"
+                    class="nav-link"
+                >
+                    <span>04</span>
+                    Projects
+                </a>
+
+                <a
+                    href="#experience"
+                    class="nav-link"
+                >
+                    <span>05</span>
+                    Experience
+                </a>
+
+                <a
+                    href="#education"
+                    class="nav-link"
+                >
+                    <span>06</span>
+                    Education
+                </a>
+
+                <a
+                    href="#certifications"
+                    class="nav-link"
+                >
+                    <span>07</span>
+                    Certifications
+                </a>
+                
+
+                <a
+                    href="#contact"
+                    class="nav-link"
+                >
+                    <span>08</span>
+                    Contact
+                </a>
+                <a  class="nav-link" href="#" onclick="openCV(); return false;">
+                   SEE my CV
+                 </a>
+
+            </div>
+
+
+            <!-- CTA -->
+
+            <a
+                href="#contact"
+                class="nav-cta"
+            >
+                Let's Talk
+                <span>↗</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+
+    <main>
+
+
+
+        <!-- =====================================================
+             HERO / HOME
+        ====================================================== -->
+
+        <section
+            class="hero-section"
+            id="home"
+            aria-labelledby="hero-title"
+        >
+
+            <div class="hero-container">
+
+
+                <!-- HERO CONTENT -->
+
+                <div class="hero-content">
+
+                    <div class="hero-status">
+
+                        <span class="status-dot"></span>
+
+                        Available for Freelance Work
+
+                    </div>
+
+
+                    <p class="hero-intro">
+                        Hello, I'm
+                    </p>
+
+
+                    <h1
+                        class="hero-title"
+                        id="hero-title"
+                    >
+
+                        <span class="hero-title-line">
+                            FAIZA
+                        </span>
+
+                        <span class="hero-title-line accent-text">
+                            NOOR
+                        </span>
+
+                    </h1>
+
+
+                    <div class="hero-role">
+
+                        <span class="role-bracket">
+                            [
+                        </span>
+
+                        <span
+                            class="typing-text"
+                            id="typingText"
+                        >
+                            JUNIOR FULL-STACK WEB DEVELOPER
+                        </span>
+
+                        <span class="role-bracket">
+                            ]
+                        </span>
+
+                    </div>
+
+
+                    <p class="hero-description">
+
+                        I build modern, responsive and user-focused
+                        digital experiences with clean code,
+                        creative design and powerful web technologies.
+
+                        <strong>
+                            Turning ideas into interactive digital products.
+                        </strong>
+
+                    </p>
+
+
+                    <!-- HERO BUTTONS -->
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#projects"
+                            class="primary-button"
+                        >
+
+                            <span>
+                                Explore My Work
+                            </span>
+
+                            <span class="button-icon">
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <a
+                            href="#contact"
+                            class="secondary-button"
+                        >
+
+                            <span>
+                                Let's Connect
+                            </span>
+
+                        </a>
+                        <button class="view-cv-btn" onclick="openCV()">
+                         VIEW MY CV
+                               </button>
+                        
+
+                    </div>
+
+
+                    <!-- HERO STATS -->
+
+                    <div class="hero-stats">
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                01+
+                            </strong>
+
+                            <span>
+                                Web Development<br>
+                                Journey
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                08+
+                            </strong>
+
+                            <span>
+                                Months<br>
+                                Development
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                15+
+                            </strong>
+
+                            <span>
+                                Skills &<br>
+                                Technologies
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- HERO VISUAL -->
+
+                <div class="hero-visual">
+
+                    <div class="visual-frame">
+
+
+                        <div class="visual-top-label">
+
+                            <span>
+                                01
+                            </span>
+
+                            <span>
+                                CREATIVE DEVELOPER
+                            </span>
+
+                        </div>
+
+
+                        <!-- ANIMATED GIRL -->
+
+                        <div class="character-container">
+
+                            <div class="character-glow"></div>
+
+                            <div class="character-ring ring-one"></div>
+                            <div class="character-ring ring-two"></div>
+                            <div class="character-ring ring-three"></div>
+
+
+                            <div class="character-image-wrapper">
+
+                                <img
+                                    src="faiza noor Image_893qrl893qrl893q.jpg"
+                                    alt="Futuristic developer girl representing Faiza Noor"
+                                    class="character-image"
+                                >
+
+                            </div>
+
+
+                            <!-- FLOATING TECHNOLOGY CARDS -->
+
+                            <div class="floating-code-card card-html">
+
+                                <span>
+                                    &lt;/&gt;
+                                </span>
+
+                                <small>
+                                    HTML5
+                                </small>
+
+                            </div>
+
+
+                            <div class="floating-code-card card-react">
+
+                                <span>
+                                    ⚛
+                                </span>
+
+                                <small>
+                                    REACT
+                                </small>
+
+                            </div>
+
+
+                            <div class="floating-code-card card-js">
+
+                                <span>
+                                    JS
+                                </span>
+
+                                <small>
+                                    JAVASCRIPT
+                                </small>
+
+                            </div>
+
+
+                            <div class="floating-code-card card-ts">
+
+                                <span>
+                                    TS
+                                </span>
+
+                                <small>
+                                    TYPESCRIPT
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="visual-bottom-label">
+
+                            <span class="visual-location">
+                                PUNJAB, PAKISTAN
+                            </span>
+
+                            <span class="visual-line"></span>
+
+                            <span class="visual-code">
+                                FULL-STACK DEVELOPER
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO SCROLL INDICATOR -->
+
+            <div
+                class="scroll-indicator"
+                aria-hidden="true"
+            >
+
+                <span class="scroll-line"></span>
+
+                <span>
+                    <span class="nisa"></span>
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+        <section
+            class="about-section section"
+            id="about"
+            aria-labelledby="about-title"
+        >
+
+            <div class="section-container">
+
+
+                <div class="section-heading">
+
+                    <div class="section-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            GET TO KNOW ME
+                        </span>
+
+                        <h2 id="about-title">
+                            About <span>Me</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="about-grid">
+
+
+                    <!-- ABOUT VISUAL -->
+
+                    <div class="about-visual">
+
+                        <div class="about-card">
+
+                            <div class="about-card-top">
+
+                                <span>
+                                    FAIZA.NOOR
+                                </span>
+
+                                <span>
+                                    ● ● ●
+                                </span>
+
+                            </div>
+
+
+                            <div class="about-code">
+
+                                <p>
+                                    <span class="code-purple">
+                                        const
+                                    </span>
+
+                                    developer
+
+                                    <span class="code-blue">
+                                        =
+                                    </span>
+                                </p>
+
+                                <p class="indent">
+                                    {
+                                </p>
+
+                                <p class="indent-double">
+
+                                    name:
+
+                                    <span class="code-green">
+                                        "Faiza Noor"
+                                    </span>,
+
+                                </p>
+
+                                <p class="indent-double">
+
+                                    role:
+
+                                    <span class="code-green">
+                                        "Junior Full-Stack Developer"
+                                    </span>,
+
+                                </p>
+
+                                <p class="indent-double">
+
+                                    background:
+
+                                    <span class="code-green">
+                                        "Medical Science"
+                                    </span>,
+
+                                </p>
+
+                                <p class="indent-double">
+
+                                    passion:
+
+                                    <span class="code-green">
+                                        "Building Digital Experiences"
+                                    </span>,
+
+                                </p>
+
+                                <p class="indent-double">
+
+                                    mindset:
+
+                                    <span class="code-green">
+                                        "Always Learning"
+                                    </span>
+
+                                </p>
+
+                                <p class="indent">
+                                    };
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-orbit">
+
+                            <span class="orbit-text">
+                                CODE • CREATE • LEARN • GROW •
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ABOUT CONTENT -->
+
+                    <div class="about-content">
+
+                        <span class="eyebrow">
+                            MY STORY
+                        </span>
+
+
+                        <h3>
+
+                            From a Medical Science
+                            <span>
+                                Background to Technology.
+                            </span>
+
+                        </h3>
+
+
+                        <p>
+
+                            I am <strong>Faiza Noor</strong>, a young
+                            Pakistani developer building my professional
+                            path at the intersection of
+                            <strong>science, technology and creativity.</strong>
+
+                        </p>
+
+
+                        <p>
+
+                            My academic journey began in the
+                            <strong>Science field</strong>.
+                            I completed my secondary education in Science
+                            and continued with <strong>F.Sc. Medical</strong>.
+
+                            My academic background developed my
+                            discipline, analytical thinking,
+                            scientific understanding and habit of
+                            continuous learning.
+
+                        </p>
+
+
+                        <p>
+
+                            During this journey, I discovered another
+                            strong interest — <strong>technology.</strong>
+
+                            I began learning computers and digital tools,
+                            then gradually moved into
+                            <strong>Web Development.</strong>
+
+                        </p>
+
+
+                        <p>
+
+                            What started as curiosity became a serious
+                            professional goal.
+
+                            I began learning frontend technologies,
+                            programming concepts, version control and
+                            modern development tools through structured
+                            self-learning, practical work and continuous
+                            practice.
+
+                        </p>
+
+
+                        <p>
+
+                            Today, my development toolkit includes
+                            <strong>
+                                HTML, CSS, JavaScript, TypeScript,
+                                React, Git and GitHub
+                            </strong>,
+
+                            while I continue expanding my knowledge of
+                            <strong>
+                                Node.js, backend development,
+                                APIs and databases
+                            </strong>.
+
+                        </p>
+
+
+                        <p>
+
+                            Alongside technology, I have developed
+                            practical experience with
+                            <strong>
+                                Microsoft Word, Excel, PowerPoint,
+                                data entry and professional documentation
+                            </strong>.
+
+                            I also have experience as a
+                            <strong>part-time home tutor</strong>,
+                            which strengthened my communication,
+                            explanation and people skills.
+
+                        </p>
+
+
+                        <div class="about-highlight">
+
+                            <span class="quote-mark">
+                                "
+                            </span>
+
+                            <p>
+
+                                My journey may have started in Science,
+                                but technology showed me that there is
+                                no limit to what I can learn and build.
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="about-tags">
+
+                            <span>
+                                Developer
+                            </span>
+
+                            <span>
+                                Creator
+                            </span>
+
+                            <span>
+                                Learner
+                            </span>
+
+                            <span>
+                                Freelancer
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             SKILLS
+        ====================================================== -->
+
+        <section
+            class="skills-section section"
+            id="skills"
+            aria-labelledby="skills-title"
+        >
+
+            <div class="section-container">
+
+
+                <div class="section-heading">
+
+                    <div class="section-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            WHAT I CAN DO
+                        </span>
+
+                        <h2 id="skills-title">
+                            Skills & <span>Expertise</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p class="section-intro">
+
+                    A growing technical toolkit developed through
+                    hands-on learning, practical projects and
+                    continuous experimentation.
+
+                </p>
+
+
+
+                <div class="skills-grid">
+
+
+                    <!-- WEB DEVELOPMENT -->
+
+                    <article class="skill-card skill-web">
+
+                        <div class="skill-card-header">
+
+                            <span class="skill-icon">
+                                &lt;/&gt;
+                            </span>
+
+                            <span class="skill-number">
+                                01
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Web Development
+                        </h3>
+
+                        <p>
+                            Building responsive, interactive and
+                            modern websites and web applications.
+                        </p>
+
+
+                        <ul class="skill-list">
+
+                            <li><span>HTML5</span></li>
+                            <li><span>CSS3</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>TypeScript</span></li>
+                            <li><span>React.js</span></li>
+                            <li><span>Node.js</span></li>
+                            <li><span>Express.js</span></li>
+                            <li><span>MongoDB</span></li>
+                            <li><span>REST APIs</span></li>
+                            <li><span>Responsive Web Design</span></li>
+                            <li><span>PostgreSQL / SQL</span></li>
+                            <li><span>REST APIs</span></li>
+                            <li><span>Authentication & Security</span></li>
+                            <li><span>Deployment & Cloud</span></li>
+                            <li><span>Testing & AI Integration </span></li>
+
+                        </ul>
+
+                    </article>
+
+
+
+                    <!-- MS OFFICE -->
+
+                    <article class="skill-card skill-office">
+
+                        <div class="skill-card-header">
+
+                            <span class="skill-icon">
+                                ▦
+                            </span>
+
+                            <span class="skill-number">
+                                02
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            MS Office
+                        </h3>
+
+                        <p>
+                            Professional productivity,
+                            documentation, spreadsheet and
+                            presentation skills.
+                        </p>
+
+
+                        <ul class="skill-list">
+
+                            <li><span>MS Word</span></li>
+                            <li><span>MS Excel</span></li>
+                            <li><span>MS PowerPoint</span></li>
+                            <li><span>Data Entry</span></li>
+                            <li><span>Professional Documents</span></li>
+                            <li><span>ATS Resume Creation</span></li>
+                            <li><span>Business Presentations</span></li>
+                            <li><span>Excel Dashboards</span></li>
+
+                        </ul>
+
+                    </article>
+
+
+
+                    <!-- DIGITAL / CREATIVE -->
+
+                    <article class="skill-card skill-creative">
+
+                        <div class="skill-card-header">
+
+                            <span class="skill-icon">
+                                ✦
+                            </span>
+
+                            <span class="skill-number">
+                                03
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Digital & Creative
+                        </h3>
+
+                        <p>
+                            Supporting digital projects with creative,
+                            communication and content-focused skills.
+                        </p>
+
+
+                        <ul class="skill-list">
+
+                            <li><span>Content Creation</span></li>
+                            <li><span>Pinterest Management</span></li>
+                            <li><span>Digital Content</span></li>
+                            <li><span>Data Entry</span></li>
+                            <li><span>Communication</span></li>
+                            <li><span>Research</span></li>
+
+                        </ul>
+
+                    </article>
+
+
+
+                    <!-- TEACHING -->
+
+                    <article class="skill-card skill-teaching">
+
+                        <div class="skill-card-header">
+
+                            <span class="skill-icon">
+                                ◉
+                            </span>
+
+                            <span class="skill-number">
+                                04
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Teaching & Communication
+                        </h3>
+
+                        <p>
+                            Helping students understand concepts through
+                            clear explanation and personal support.
+                        </p>
+
+
+                        <ul class="skill-list">
+
+                            <li><span>Home Tuition</span></li>
+                            <li><span>Science</span></li>
+                            <li><span>Mathematics</span></li>
+                            <li><span>English</span></li>
+                            <li><span>Student Support</span></li>
+                            <li><span>Written Communication</span></li>
+                            <li><span>Verbal Communication</span></li>
+
+                        </ul>
+
+                    </article>
+
+                </div>
+
+
+
+                <!-- TECHNOLOGY MARQUEE -->
+
+                <div
+                    class="tech-marquee"
+                    aria-label="Technology skills"
+                >
+
+                    <div class="marquee-track">
+
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JAVASCRIPT</span>
+                        <span>TYPESCRIPT</span>
+                        <span>REACT</span>
+                        <span>NODE.JS</span>
+                        <span>EXPRESS</span>
+                        <span>MONGODB</span>
+                        <span>GIT</span>
+                        <span>GITHUB</span>
+                        <span>MS WORD</span>
+                        <span>MS EXCEL</span>
+                        <span>POWERPOINT</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PROJECTS
+        ====================================================== -->
+
+        <section
+            class="projects-section section"
+            id="projects"
+            aria-labelledby="projects-title"
+        >
+
+            <div class="section-container">
+
+
+                <div class="section-heading">
+
+                    <div class="section-number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            SELECTED WORK
+                        </span>
+
+                        <h2 id="projects-title">
+                            My <span>Projects</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p class="section-intro">
+
+                    Practical projects created to strengthen my
+                    development, productivity and problem-solving skills.
+
+                </p>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- =====================================================
+                         PROJECT 01 — SHOPSPHERE E-COMMERCE
+                    ===================================================== -->
+
+                        <article class="project-card project-featured">
+
+            
+                        <div class="project-image">
+
+                           <div class="project-overlay">
+
+                             <span class="project-category">
+                            FULL-STACK E-COMMERCE
+                                 </span>
+
+                                <span class="project-arrow">
+                                   ↗
+                                  </span>
+
+    </div>
+
+    <!-- Replace this image with your actual ShopSphere screenshot -->
+    <img
+        src="Screenshot 2026-08-31 144531.png"
+        alt="ShopSphere Full-Stack E-Commerce Platform"
+        class="project-preview-image"
+    >
+
+</div>
+
+
+<div class="project-content">
+
+    <div class="project-meta">
+
+        <span>01</span>
+
+        <span>
+            FULL-STACK WEB APP
+        </span>
+
+    </div>
+
+
+    <h3>
+        ShopSphere — E-Commerce Platform
+    </h3>
+
+
+    <p>
+
+        A complete full-stack e-commerce web application
+        featuring a modern shopping experience, product
+        management, user authentication, cart functionality
+        and backend API integration.
+
+        The application was built with a separate frontend
+        and backend architecture and deployed for production.
+
+    </p>
+
+
+    <div class="project-tech">
+
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>MongoDB</span>
+        <span>REST API</span>
+        <span>Vercel</span>
+
+    </div>
+
+
+    <div class="project-links">
+
+        <a
+            href="https://shopsphere-ecommerce-beta.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+        >
+            Live Demo
+            <span>↗</span>
+        </a>
+
+
+        <a
+            href="https://github.com/fizzanoor051-arch/Shopsphere-ecommerce.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+        >
+            GitHub
+            <span>↗</span>
+        </a>
+
+    </div>
+
+</div>
+
+
+</article>
+
+<!-- =====================================================
+     PROJECT 02 — MODERN HOSPITAL WEBSITE
+====================================================== -->
+
+<article class="project-card">
+
+
+<div class="project-image">
+
+    <div class="project-overlay">
+
+        <span class="project-category">
+            HEALTHCARE WEB DEVELOPMENT
+        </span>
+
+        <span class="project-arrow">
+            ↗
+        </span>
+
+    </div>
+
+    <!-- Replace with your actual Hospital website screenshot -->
+    <img
+        src="Screenshot 2026-08-25 115318.png"
+        alt="Modern Hospital Website"
+        class="project-preview-image"
+    >
+
+</div>
+
+
+<div class="project-content">
+
+    <div class="project-meta">
+
+        <span>02</span>
+
+        <span>
+            REACT WEB APPLICATION
+        </span>
+
+    </div>
+
+
+    <h3>
+        Modern Hospital Website
+    </h3>
+
+
+    <p>
+
+        A modern and responsive healthcare website designed
+        to provide patients with a professional digital
+        experience.
+
+        The project focuses on clean UI, responsive layouts,
+        accessible information and intuitive navigation for
+        healthcare services.
+
+    </p>
+
+
+    <div class="project-tech">
+
+        <span>React</span>
+        <span>JavaScript</span>
+        <span>CSS3</span>
+        <span>Responsive Design</span>
+        <span>Netlify</span>
+
+    </div>
+
+
+    <div class="project-links">
+
+        <a
+            href="https://classy-vacherin-7a04fc.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+        >
+            Live Demo
+            <span>↗</span>
+        </a>
+
+        <a
+            href="https://github.com/fizzanoor051-arch/hospital-react-project.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+        >
+            GitHub
+            <span>↗</span>
+        </a>
+
+    </div>
+
+</div>
+
+
+</article>
+
+                      
+
+
+                 
+
+
+
+                    <!-- PROJECT 03 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <div class="project-overlay">
+
+                                <span class="project-category">
+                                    PRODUCTIVITY
+                                </span>
+
+                                <span class="project-arrow">
+                                    ↗
+                                </span>
+
+                            </div>
+
+                            <div class="project-placeholder">
+
+                                <span class="project-code-symbol">
+                                    TASKS
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+
+                                <span>03</span>
+                                <span>APPLICATION</span>
+
+                            </div>
+
+                            <h3>
+                                Task Management Application
+                            </h3>
+
+                            <p>
+
+                                A productivity-focused application for
+                                creating, managing and organizing
+                                everyday tasks.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>Local Storage</span>
+
+                            </div>
+
+
+                            <a
+                                href="#"
+                                class="project-link"
+                                aria-label="View Task Management project"
+                            >
+                                View Project
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 04 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <div class="project-overlay">
+
+                                <span class="project-category">
+                                    FINANCE
+                                </span>
+
+                                <span class="project-arrow">
+                                    ↗
+                                </span>
+
+                            </div>
+
+                            <div class="project-placeholder">
+
+                                <span class="project-code-symbol">
+                                    ₨ TRACKER
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+
+                                <span>04</span>
+                                <span>WEB APP</span>
+
+                            </div>
+
+                            <h3>
+                                Expense Tracker
+                            </h3>
+
+                            <p>
+
+                                A practical expense tracking application
+                                designed to organize income, expenses
+                                and personal budgeting.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+
+                            </div>
+
+
+                            <a
+                                href="#"
+                                class="project-link"
+                                aria-label="View Expense Tracker project"
+                            >
+                                View Project
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJECT 05 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <div class="project-overlay">
+
+                                <span class="project-category">
+                                    PERSONAL BRAND
+                                </span>
+
+                                <span class="project-arrow">
+                                    ↗
+                                </span>
+
+                            </div>
+
+                            <div class="project-placeholder">
+
+                                <span class="project-code-symbol">
+                                    FAIZA.NOOR
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+
+                                <span>05</span>
+                                <span>PORTFOLIO</span>
+
+                            </div>
+
+                            <h3>
+                                Personal Portfolio Website
+                            </h3>
+
+                            <p>
+
+                                A futuristic personal portfolio designed
+                                to showcase my development journey,
+                                skills, projects, experience and
+                                professional identity.
+
+                            </p>
+
+
+                            <div class="project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+
+                            </div>
+
+
+                            <a
+                                href="#home"
+                                class="project-link"
+                            >
+                                Current Website
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+                <!-- MS OFFICE PROJECTS -->
+
+                <div class="office-projects">
+
+                    <div class="subsection-heading">
+
+                        <span class="subsection-icon">
+                            ▦
+                        </span>
+
+                        <div>
+
+                            <span>
+                                PRODUCTIVITY WORK
+                            </span>
+
+                            <h3>
+                                MS Office Projects
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="office-project-grid">
+
+
+                        <article class="office-project-card">
+
+                            <span class="office-icon excel">
+                                X
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Employee Attendance Tracker
+                                </h4>
+
+                                <p>
+                                    Excel-based attendance management
+                                    and tracking system.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="office-project-card">
+
+                            <span class="office-icon excel">
+                                X
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Sales & Business Dashboard
+                                </h4>
+
+                                <p>
+                                    Data-focused dashboard for business
+                                    reporting and analysis.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="office-project-card">
+
+                            <span class="office-icon excel">
+                                X
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Monthly Budget Tracker
+                                </h4>
+
+                                <p>
+                                    Personal finance and monthly
+                                    budgeting spreadsheet.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="office-project-card">
+
+                            <span class="office-icon word">
+                                W
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Professional ATS Resume
+                                </h4>
+
+                                <p>
+                                    Clean, professional and
+                                    ATS-friendly resume template.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="office-project-card">
+
+                            <span class="office-icon ppt">
+                                P
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Business Presentation
+                                </h4>
+
+                                <p>
+                                    Professional PowerPoint
+                                    presentation design.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             EXPERIENCE
+        ====================================================== -->
+
+        <section
+            class="experience-section section"
+            id="experience"
+            aria-labelledby="experience-title"
+        >
+
+            <div class="section-container">
+
+
+                <div class="section-heading">
+
+                    <div class="section-number">
+                        05
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            MY JOURNEY
+                        </span>
+
+                        <h2 id="experience-title">
+                            Experience <span>& Growth</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline">
+
+
+                    <!-- WEB DEVELOPMENT -->
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-marker">
+                            01
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <div class="timeline-top">
+
+                                <span class="timeline-duration">
+                                    LEARNING & PROJECTS
+                                </span>
+
+                                <span class="timeline-type">
+                                    DEVELOPMENT
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Junior Full-Stack Web Developer
+                            </h3>
+
+                            <p>
+
+                                Building practical web projects while
+                                strengthening frontend and backend
+                                development skills.
+
+                                Working with modern technologies
+                                including HTML, CSS, JavaScript,
+                                TypeScript, React, Node.js, APIs,
+                                Git and GitHub.
+
+                            </p>
+
+
+                            <div class="timeline-tags">
+
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>TypeScript</span>
+                                <span>Node.js</span>
+                                <span>Git</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- MS OFFICE -->
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-marker">
+                            02
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <div class="timeline-top">
+
+                                <span class="timeline-duration">
+                                    4 MONTHS
+                                </span>
+
+                                <span class="timeline-type">
+                                    PRODUCTIVITY
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                MS Office Specialist
+                            </h3>
+
+                            <p>
+
+                                Practical experience with Microsoft
+                                Word, Excel and PowerPoint, including
+                                professional documentation, data
+                                management, spreadsheets, dashboards,
+                                resumes and presentations.
+
+                            </p>
+
+
+                            <div class="timeline-tags">
+
+                                <span>MS Word</span>
+                                <span>MS Excel</span>
+                                <span>PowerPoint</span>
+                                <span>Data Entry</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- HOME TUTOR -->
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-marker">
+                            03
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <div class="timeline-top">
+
+                                <span class="timeline-duration">
+                                    PART-TIME
+                                </span>
+
+                                <span class="timeline-type">
+                                    TEACHING
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Home Tutor — Part-Time
+                            </h3>
+
+                            <p>
+
+                                Providing home-based tutoring and
+                                academic support to students.
+
+                                Focused on clear explanations,
+                                personalized learning and strong
+                                communication.
+
+                            </p>
+
+
+                            <div class="timeline-tags">
+
+                                <span>Science</span>
+                                <span>Math</span>
+                                <span>English</span>
+                                <span>Student Support</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             EDUCATION
+        ====================================================== -->
+
+        <section
+            class="education-section section"
+            id="education"
+            aria-labelledby="education-title"
+        >
+
+            <div class="section-container">
+
+
+                <div class="section-heading">
+
+                    <div class="section-number">
+                        06
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            ACADEMIC BACKGROUND
+                        </span>
+
+                        <h2 id="education-title">
+                            Education <span>& Knowledge</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="education-story">
+
+
+                    <!-- F.SC MEDICAL -->
+
+                    <article class="education-card medical-education">
+
+                        <div class="education-year">
+                            F.SC MEDICAL
+                        </div>
+
+                        <div class="education-icon">
+                            +
+                        </div>
+
+                        <div class="education-content">
+
+                            <span class="education-category">
+                                SCIENCE / MEDICAL
+                            </span>
+
+                            <h3>
+                                F.Sc. Medical
+                            </h3>
+
+                            <h4>
+                                Punjab Group of Colleges, Pasrur
+                            </h4>
+
+                            <p>
+
+                                Completed higher secondary education
+                                in the Medical Science stream.
+
+                                This phase developed my analytical
+                                thinking, scientific understanding,
+                                discipline and ability to learn
+                                complex concepts.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- MATRIC -->
+
+                    <article class="education-card">
+
+                        <div class="education-year">
+                            MATRICULATION
+                        </div>
+
+                        <div class="education-icon">
+                            ◈
+                        </div>
+
+                        <div class="education-content">
+
+                            <span class="education-category">
+                                SCIENCE
+                            </span>
+
+                            <h3>
+                                Matriculation — Science
+                            </h3>
+
+                            <h4>
+                                Rahman Public High School,
+                                Soukin Wind
+                            </h4>
+
+                            <p>
+
+                                Completed secondary education with a
+                                strong foundation in Science subjects,
+                                academic learning and analytical thinking.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- WEB DEVELOPMENT -->
+
+                    <article class="education-card technology-education">
+
+                        <div class="education-year">
+                            2025 — PRESENT
+                        </div>
+
+                        <div class="education-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <div class="education-content">
+
+                            <span class="education-category">
+                                TECHNOLOGY
+                            </span>
+
+                            <h3>
+                                Full-Stack Web Development
+                            </h3>
+
+                            <h4>
+                                Self-Learning • W3Schools • NAVTTC
+                            </h4>
+
+                            <p>
+
+                                Transitioned into technology through
+                                structured self-learning and practical
+                                development.
+
+                                Built knowledge in frontend technologies
+                                and continue expanding my skills into
+                                backend development.
+
+                            </p>
+
+
+                            <div class="education-tech-stack">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Node.js</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CERTIFICATIONS
+        ====================================================== -->
+
+        <section
+            class="certifications-section section"
+            id="certifications"
+            aria-labelledby="certifications-title"
+        >
+
+            <div class="section-container">
+
+
+                <div class="section-heading">
+
+                    <div class="section-number">
+                        07
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            CREDENTIALS
+                        </span>
+
+                        <h2 id="certifications-title">
+                            Certifications <span>& Courses</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="certifications-grid">
+
+
+                    <!-- MS OFFICE -->
+
+                    <article class="certificate-card">
+
+                        <div class="certificate-icon">
+                            ✓
+                        </div>
+
+                        <div class="certificate-content">
+
+                            <span>
+                                2026
+                            </span>
+
+                            <h3>
+                                Microsoft Office Specialist
+                                Certificate
+                            </h3>
+
+                            <p>
+                                IT Center, Narowal
+                                (TEVTA / PSDA)
+                            </p>
+
+                            <div class="certificate-status">
+                                Completed
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- WEB DEVELOPMENT -->
+
+                    <article class="certificate-card">
+
+                        <div class="certificate-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <div class="certificate-content">
+
+                            <span>
+                                2025 — 2026
+                            </span>
+
+                            <h3>
+                                Full-Stack Web Development
+                            </h3>
+
+                            <p>
+                                NAVTTC • Self-Learning • W3Schools
+                            </p>
+
+                            <div class="certificate-status">
+                                Learning & Skill Development
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             MINDSET
+        ====================================================== -->
+
+        <section
+            class="mindset-section section"
+            aria-labelledby="mindset-title"
+        >
+
+            <div class="section-container">
+
+                <div class="mindset-box">
+
+
+                    <div class="mindset-decoration">
+
+                        <span>01</span>
+                        <span>02</span>
+                        <span>03</span>
+
+                    </div>
+
+
+                    <div class="mindset-content">
+
+                        <span class="eyebrow">
+                            THE MINDSET
+                        </span>
+
+                        <h2 id="mindset-title">
+
+                            I don't believe in
+                            <span>
+                                staying in one box.
+                            </span>
+
+                        </h2>
+
+
+                        <p>
+
+                            My journey from Medical Science to
+                            Technology taught me something important:
+
+                            <strong>
+                                learning has no limits.
+                            </strong>
+
+                            Every new skill gives me another way
+                            to solve problems, create value and
+                            build something meaningful.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="mindset-symbol">
+
+                        <span class="symbol-main">
+                            &lt;/&gt;
+                        </span>
+
+                        <span class="symbol-text">
+                            KEEP<br>
+                            BUILDING
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section
+            class="contact-section section"
+            id="contact"
+            aria-labelledby="contact-title"
+        >
+
+            <div class="section-container">
+
+
+                <div class="section-heading">
+
+                    <div class="section-number">
+                        08
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            LET'S WORK TOGETHER
+                        </span>
+
+                        <h2 id="contact-title">
+                            Get In <span>Touch</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="contact-grid">
+
+
+                    <!-- CONTACT INTRO -->
+
+                    <div class="contact-intro">
+
+                        <span class="eyebrow">
+                            HAVE A PROJECT?
+                        </span>
+
+                        <h3>
+
+                            Let's build something
+                            <span>
+                                amazing together.
+                            </span>
+
+                        </h3>
+
+
+                        <p>
+
+                            Whether you need a modern website,
+                            frontend development, MS Office work,
+                            data entry or digital support,
+
+                            I'm interested in meaningful projects
+                            and professional opportunities.
+
+                        </p>
+
+
+                        <div class="contact-availability">
+
+                            <span class="availability-dot"></span>
+
+                            <div>
+
+                                <strong>
+                                    Currently Available
+                                </strong>
+
+                                <span>
+                                    For Freelance & Remote Projects
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CONTACT DETAILS -->
+
+                    <div class="contact-details">
+
+
+                        <!-- EMAIL -->
+
+                        <a
+                            href="mailto:fizzanoor051@email.com"
+                            class="contact-item"
+                        >
+
+                            <span class="contact-icon">
+                                @
+                            </span>
+
+                            <div>
+
+                                <small>
+                                    EMAIL
+                                </small>
+
+                                <strong>
+                                    fizzanoor051@email.com
+                                </strong>
+
+                            </div>
+
+                            <span class="contact-arrow">
+                                ↗
+                            </span>
+
+                        </a>
+
+
+
+                        <!-- PHONE -->
+
+                        <a
+                            href="tel:+923019346310"
+                            class="contact-item"
+                        >
+
+                            <span class="contact-icon">
+                                ☎
+                            </span>
+
+                            <div>
+
+                                <small>
+                                    PHONE
+                                </small>
+
+                                <strong>
+                                    +92 301-9346310
+                                </strong>
+
+                            </div>
+
+                            <span class="contact-arrow">
+                                ↗
+                            </span>
+
+                        </a>
+
+
+
+                        <!-- LINKEDIN -->
+
+                        <a
+                            href="https://linkedin.com/in/fizza-noor-b2711b42b"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-item"
+                        >
+
+                            <span class="contact-icon">
+                                in
+                            </span>
+
+                            <div>
+
+                                <small>
+                                    LINKEDIN
+                                </small>
+
+                                <strong>
+                                    linkedin.com/in/fizza-noor-b2711b42b
+                                </strong>
+
+                            </div>
+
+                            <span class="contact-arrow">
+                                ↗
+                            </span>
+
+                        </a>
+
+
+
+                        <!-- GITHUB -->
+
+                        <a
+                            href="https://github.com/fizzanoor051-arch"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-item"
+                        >
+
+                            <span class="contact-icon">
+                                &lt;/&gt;
+                            </span>
+
+                            <div>
+
+                                <small>
+                                    GITHUB
+                                </small>
+
+                                <strong>
+                                    github.com/fizzanoor051-arch
+                                </strong>
+
+                            </div>
+
+                            <span class="contact-arrow">
+                                ↗
+                            </span>
+
+                        </a>
+
+
+
+                        <!-- LOCATION -->
+
+                        <div class="contact-item">
+
+                            <span class="contact-icon">
+                                ⌖
+                            </span>
+
+                            <div>
+
+                                <small>
+                                    LOCATION
+                                </small>
+
+                                <strong>
+                                    Punjab, Pakistan
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONTACT FORM -->
+
+                <div class="contact-form-wrapper">
+
+                    <div class="form-header">
+
+                        <span>
+                            SEND A MESSAGE
+                        </span>
+
+                        <span>
+                            SECURE CONNECTION
+                        </span>
+
+                    </div>
+
+
+                    <form
+                        class="contact-form"
+                        id="contactForm"
+                    >
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Your Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Your Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What would you like to discuss?"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Tell me about your project..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+
+                        <button
+                            type="submit"
+                            class="submit-button"
+                        >
+
+                            <span>
+                                SEND MESSAGE
+                            </span>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+
+            <!-- FOOTER BRAND -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="#home"
+                    class="logo"
+                >
+
+                    <span class="logo-symbol">
+                        &lt;/&gt;
+                    </span>
+
+                    <span class="logo-name">
+                        FAIZA<span>NOOR</span>
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Building digital experiences with
+                    code, creativity and curiosity.
+                </p>
+
+            </div>
+
+
+
+            <!-- FOOTER NAVIGATION -->
+
+            <div class="footer-navigation">
+
+                <span class="footer-title">
+                    NAVIGATE
+                </span>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#experience">
+                    Experience
+                </a>
+
+                <a href="#education">
+                    Education
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+
+            <!-- SOCIAL LINKS -->
+
+            <div class="footer-social">
+
+                <span class="footer-title">
+                    CONNECT
+                </span>
+
+
+                <a
+                    href="https://github.com/fizzanoor051-arch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub ↗
+                </a>
+
+
+                <a
+                    href="https://linkedin.com/in/fizza-noor-b2711b42b"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn ↗
+                </a>
+
+
+                <a href="mailto:fizzanoor051@email.com">
+                    Email ↗
+                </a>
+
+            </div>
+
+
+
+            <!-- AVAILABILITY -->
+
+            <div class="footer-status">
+
+                <span class="status-dot"></span>
+
+                <span>
+                    AVAILABLE FOR WORK
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 FAIZA NOOR. ALL RIGHTS RESERVED.
+            </span>
+
+            <span>
+                DESIGNED & BUILT WITH &lt;/&gt; + CREATIVITY
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         BACK TO TOP BUTTON
+    ========================================================== -->
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+
+
+    <!-- =========================================================
+         CUSTOM CURSOR
+    ========================================================== -->
+
+    <div
+        class="custom-cursor cursor-dot"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="custom-cursor cursor-outline"
+        aria-hidden="true"
+    ></div>
+
+
+
+    <!-- =========================================================
+         CURSOR TRAIL
+    ========================================================== -->
+
+    <div
+        class="cursor-trail"
+        aria-hidden="true"
+    ></div>
+
+
+
+    <!-- =========================================================
+         FIXED SCROLL ARROW
+         JavaScript will control its behaviour.
+    ========================================================== -->
+
+    <a
+        href="#about"
+        class="scroll-arrow"
+        id="scrollArrow"
+        aria-label="Scroll to About section"
+    >
+        ↓
+    </a>
+<div class="cursor-glow"></div>
+
+</body>
+
+</html>
