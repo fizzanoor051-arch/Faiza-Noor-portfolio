@@ -7256,3 +7256,10 @@ transition: transform 0.6s ease;
 .project-card:hover .project-preview-image {
 transform: scale(1.05);
 }
+/* =========================================================
+   DISABLE STORM LIGHTNING
+========================================================= */
+
+.electricity {
+    display: none !important;
+}
